@@ -17,7 +17,7 @@ function login() {
             text.innerHTML = 'Correct. Logging you on...';
             text.style.color = 'green';
             sessionStorage.setItem('gone-through-login-page', 'true');
-            window.location.replace('https://www.piggame.co.uk/admin/login/loginservice?username=' + username + '&password=' + password);
+            window.location.replace('/login/loginservice?username=' + username + '&password=' + password);
         } else {
             text.innerHTML = 'Incorrect username or password.';
             text.style.color = 'red';
