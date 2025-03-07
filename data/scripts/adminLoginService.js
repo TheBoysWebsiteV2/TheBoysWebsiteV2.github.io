@@ -13,12 +13,12 @@ if (username in data) {
         sessionStorage.setItem('currentAccount', username);
         sessionStorage.setItem('userRank', ranks[username]);
     } else {
-        window.location.replace('https://www.piggame.co.uk/admin/login');
+        window.location.replace('/login');
     }
 } else {
-    window.location.replace('https://www.piggame.co.uk/admin/login');
+    window.location.replace('/login');
 }
 
 //Head to admin home screen
 
-window.location.replace('https://www.piggame.co.uk/admin/dashboard/home');
+window.location.replace('/dashboard/home');
