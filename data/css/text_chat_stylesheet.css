@@ -1,0 +1,48 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+header {
+  font-size: 30px;
+  background-color: grey;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li.selected {
+  text-decoration: underline;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+article {
+  font-family: 'Comic Sans MS', sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container {
+  margin-top: 20px;
+}
+.container-heading {
+  margin-top: 0;
+}
