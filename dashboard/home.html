@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Pig Game Admin</title>
+    <title id="tab-title">Home|The Boys Website V2</title>
     <style>
       body {
         font-family: 'Arial', sans-serif;
@@ -68,65 +68,10 @@
       </nav>
     </header>
     <article>
-      <h1>Random Stuff...</h1>
-      <p>Hi guys! I'm still coding this Admin site, but the text chat works! I'll still need to code some stuff though.</p>
-      <div class="container" id="rankchecker">
-        <h2 class="container-heading">Admin rank checker</h2>
-        <p>Your Admin rank is:</p>
-        <p id="admin-rank-checker-text-1">Please wait.</p>
-        <p id="admin-rank-checker-text-2">Checking your Admin rank...</p>
-        <p>To ask if you can have your rank changed, message Odhran Vermunt on the <a href="text-chat#chat-container" style="color:black; text-decoration:underline;">Text Chat</a>.</p>
-      </div>
-      <div id="work-display">
-        <h2 class="contianer-heading">Work</h2>
-        <h2>Here is where all your jobs will appear.</h2>
-        <h3>• Design a homepage</h3>
-        <p><strong>I need a homepage that you see when the game has loaded. (you know in MineCraft, how when you've got past the loading screen, you see a screen that has three buttons: Play, Marketplace, Settings?)</strong></p>
-        <p>If you create a design, email it to me at <a href="mailto:odhran.vermunt@gmail.com" style="color:black; text-decoration:underline;">odhran.vermunt@gmail.com</a>.</p>
-        <p>This is a design that I created:</p>
-        <p><img src="/data/images/homepagedesignidea.png"/></p>
-        <p>To see better where & when the homepage will show, watch this video:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zQJYly0rTL4?si=CM7NwA2DMUYGC1Xm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h3>• Create theme tune for game</h3>
-        <p><strong>Every good game has a theme tune, and Pig Game needs a good theme tune. </strong></p>
-        <p>So, if you play an instrument, you could try and create a good theme tune for Pig Game.</p>
-        <p>And if you make a very good theme tune, it might be used in Pig Game!</p>
-        <p></p>
-        <h3>• Try to learn some coding</h3>
-        <p><strong>The coding languages used in Pig Game are actually quite easy to learn</strong></p>
-        <p>Here are some of the coding languages used in Pig Game:</p>
-        <h4>Python</h4>
-        <p><u>Python is the language that the game itself(not the website) is coded in.</u></p>
-        <p>Python is the first coding language that I learned, and it still is probably the easiest of all of the coding languages that I know.</p>
-        <p>Python is a good coding language to get started with. It is very easy to learn and is not very complicated.</p>
-        <p>I found a little PDF about getting started with Python <a href="https://renanmf.com/wp-content/uploads/2020/04/python_beginners.pdf" style="color:black; text-decoration:underline;">here</a>.</p>
-        <h4>HTML/CSS/JavaScript</h4>
-        <p><u>These all go together to build websites.</u></p>
-        <p><u>They are slightly more difficult and I think Python would be a better choice for begining coding.</u></p>
-        <p>CSS(Cascading Style Sheets) is for adding the style to a page(positions, colours, fonts, e.c.t.).</p>
-        <p>HTML(Hyper-Text Markup Language) is what sets all the text, links and buttons.</p>
-        <p>Together, HTML and CSS can make a nice web page, and you virtually cannot make a web page without both.</p>
-        <p>You could make a very dull, boring one with just HTML but it would not be very eyecatching.</p>
-        <p>With just CSS, (as far as I'm aware) you could not make a website full stop.</p>
-        <p>JavaScript is what would handle logins, making sounds play, all that stuff that makes a web page come to life.</p>
-        <p>It is the most simmilar to Python (out of HTML, CSS and JavaScript) because it can do logic stuff (like 'do this if this is true').</p>
-        <p>It can take a fair while to learn all three of these, and I would highly recomend Python to learn first.</p>
-        <h4>So, remember this. <mark>Python for making apps (and the game), HTML/CSS/JavaScript for website coding.</mark></h4>
+      <h2><strong>NOTE:</strong>I have just finished making our website... ENJOY! </h2>
+      <p>We don't have many things on our website right now but we soon will!</p>
+      <p>Well done for getting onto this website!</p>
+      <p>Explore the website, and message me on roblox if you want to add something (pictures or notes)</p>
     </article>
-    <script>
-      var w = document.getElementById('admin-rank-checker-text-1');
-      var x = document.getElementById('admin-rank-checker-text-2');
-      var y = sessionStorage.getItem('currentAccount');
-      var z = sessionStorage.getItem('userRank');
-      if ((x == null) || (z == null)) {
-        sessionStorage.setItem('errorText', 'Your account data was not right. This could be caused by going to the Admin Home Page without going through the login page. Otherwise, this is probably just a rare error. If this happens again, please contact <a href="mailto:odhran.vermunt@gmail.com">Odhran Vermunt</a>.');
-        sessionStorage.setItem('buttonText', 'Click here to continue');
-        sessionStorage.setItem('buttonSite', 'https://www.piggame.co.uk/admin/login');
-        window.location.replace('https://www.piggame.co.uk/admin/error');
-      } else {
-        w.innerText = 'Username: ' + y;
-        x.innerText = 'Rank: ' + z + ' Admin';
-      }
-    </script>
   </body>
 </html>
