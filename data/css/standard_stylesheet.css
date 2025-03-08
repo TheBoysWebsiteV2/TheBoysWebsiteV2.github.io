@@ -3,6 +3,12 @@ body {
   background-color: #f5f5f5;
   margin: 0;
 }
+article a {
+  text-decoration: underline;
+}
+article a:hover {
+  text-decoration: none;
+}
 header {
   font-size: 30px;
   background-color: grey;
