@@ -3,11 +3,13 @@ body {
   background-color: #f5f5f5;
   margin: 0;
 }
-article a {
+a {
   text-decoration: underline;
+  color: black;
 }
-article a:hover {
+a:hover {
   text-decoration: none;
+  color: black;
 }
 header {
   font-size: 30px;
