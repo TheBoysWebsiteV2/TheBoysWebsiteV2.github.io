@@ -122,6 +122,7 @@
       window.onload = function() {
         document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
       };
+      const d = new Date();
       const datestring = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + '|' + d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear();
       const firebaseConfig = {
         apiKey: "AIzaSyDEJcE63xtRVj-C4d_Mk5XewMQ2PJIsJsM",
