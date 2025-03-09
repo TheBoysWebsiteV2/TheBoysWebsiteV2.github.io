@@ -122,7 +122,7 @@
       window.onload = function() {
         document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
       };
-
+      const datestring = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + '|' + d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear();
       const firebaseConfig = {
         apiKey: "AIzaSyDEJcE63xtRVj-C4d_Mk5XewMQ2PJIsJsM",
         authDomain: "theboyswebsitev2textchat.firebaseapp.com",
@@ -170,7 +170,7 @@
           messageElement.style = 'background-color: yellow; text-align: center;';
           messageElement.textContent = `${message.text}`;
         } else {
-          messageElement.textContent = `${message.name}: ${message.text}`;
+          messageElement.textContent = `${datestring}|{message.name}: ${message.text}`;
         }
 
         document.getElementById('messages').appendChild(messageElement);
