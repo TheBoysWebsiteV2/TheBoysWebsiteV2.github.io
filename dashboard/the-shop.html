@@ -6,10 +6,18 @@
     <title id="tab-title">Home | The Boys Website V2</title>
     <link type="text/css" rel="stylesheet" href="/data/css/standard_stylesheet.css">
     <style>
-      img.logoheading {
+      div.logoheading {
+        background-color: orange;
+        height: 30px;
+      }
+      div.logoheading img {
         width: 25%;
         max-width: 150px;
         height: auto;
+      }
+      div.logoheading h1 {
+        font-size: 20px;
+
       }
     </style>
     <script src="/data/scripts/adminData.js"></script>
@@ -30,7 +38,9 @@
       </nav>
     </header>
     <article>
-      <h1><img src="/data/images/the-shop-logo.png" class="logoheading"/> The Shop</h1>
+      <div class="logoheading">
+        <h1><img src="/data/images/the-shop-logo.png"/> The Shop</h1>
+      </div>
     </article>
   </body>
 </html>
