@@ -4,25 +4,19 @@ var data = {
     'TGreen': 'ZK618',
     'DKennedy': 'JB393',
     'OVermunt': 'HE734FHG67',
-    'LKane': 'ZB475',
-    'POcallaghan': 'TB493',
-    'JVermunt': 'AB123'
+    'LKane': 'ZB475'
 };
 var ranks = {
     'VBurden': 'Standard',
-    'TGreen': 'Senior',
-    'DKennedy': 'Senior',
+    'TGreen': 'Standard',
+    'DKennedy': 'Standard',
     'OVermunt': 'Full',
-    'LKane': 'Basic',
-    'POcallaghan': 'Basic',
-    'JVermunt': 'Senior'
+    'LKane': 'Standard'
 };
 var lockedAccounts = {
     'VBurden': 'FALSE',
     'TGreen': 'FALSE',
     'DKennedy': 'FALSE',
     'OVermunt': 'FALSE',
-    'LKane': 'TRUE',
-    'POcallaghan': 'TRUE',
-    'JVermunt': 'TRUE'
+    'LKane': 'FALSE'
 };
