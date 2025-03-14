@@ -2,7 +2,7 @@ console.info('ϟSCRIPT-LOAD: adminData.js [SUCCESFUL]');
 var data = {
     'VBurden': 'PG426',
     'TGreen': 'ZK618',
-    'DKennedy': 'JB393',
+    'DKennedy': 'TB493',
     'OVermunt': 'HE734FHG67',
     'LKane': 'ZB475'
 };
