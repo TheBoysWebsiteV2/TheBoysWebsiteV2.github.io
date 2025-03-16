@@ -1,7 +1,8 @@
 const productsContainer = document.getElementsByClassName("productscontainer")[0];
-const productsContainerLen = productsContainer.getElementsByClassName("productcontainer").length;
+const productContainers = productsContainer.getElementsByClassName("productcontainer");
+const productsContainerLen = productContainers.length;
 
 for (let x = 0; x < productsContainerLen; x++) {
-  z = productsContainer.getElementsByClassName("productcontainer")[x].id
-  document.getElementById('productImage_' + z).src='/data/images/the_shop_' + z + '_product-image_1';
+  const z = productContainers[x].id;
+  document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1';
 }
