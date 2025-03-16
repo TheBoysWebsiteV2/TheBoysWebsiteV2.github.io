@@ -10,7 +10,7 @@ var ranks = {
     'VBurden': 'Standard',
     'TGreen': 'Standard',
     'DKennedy': 'Standard',
-    'OVermunt': 'Full',
+    'OVermunt': 'Admin',
     'LKane': 'Standard'
 };
 var lockedAccounts = {
