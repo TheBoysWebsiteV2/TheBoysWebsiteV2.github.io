@@ -1,19 +1,19 @@
 console.info('ϟSCRIPT-LOAD: adminData.js [SUCCESFUL]');
-var data = {
+const data = {
     'VBurden': 'PG426',
     'TGreen': 'ZK618',
     'DKennedy': 'TB493',
     'OVermunt': 'HE734FHG67',
     'LKane': 'ZB475'
 };
-var ranks = {
+const ranks = {
     'VBurden': 'Standard',
     'TGreen': 'Standard',
     'DKennedy': 'Standard',
     'OVermunt': 'Standard',
     'LKane': 'Standard'
 };
-var lockedAccounts = {
+const lockedAccounts = {
     'VBurden': 'FALSE',
     'TGreen': 'FALSE',
     'DKennedy': 'FALSE',
