@@ -3,6 +3,6 @@ const productContainers = productsContainer.getElementsByClassName("productconta
 const productsContainerLen = productContainers.length;
 
 for (let x = 0; x < productsContainerLen; x++) {
-  const z = productContainers[x].id;
-  document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1';
+  let z = productContainers[x].id;
+  document.getElementById('productImage_' + z).src='/data/images/the_shop_' + z + '_product-image_1';
 }
