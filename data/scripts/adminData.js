@@ -10,7 +10,7 @@ const ranks = {
     'VBurden': 'Standard',
     'TGreen': 'Standard',
     'DKennedy': 'Standard',
-    'OVermunt': 'Standard',
+    'OVermunt': 'Full',
     'LKane': 'Standard'
 };
 const lockedAccounts = {
