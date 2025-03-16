@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         for (let x = 0; x < productsContainerLen; x++) {
             let z = productContainers[x].id;
-            document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1';
+            document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1.png';
         }
     } else {
         console.error("No elements with class 'productscontainer' found.");
