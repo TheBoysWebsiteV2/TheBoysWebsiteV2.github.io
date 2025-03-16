@@ -4,3 +4,4 @@ if (ranks[z] == 'Admin') {
 } else {
   alert('Sorry, this page is currently Admin-Only. \nYou cannot visit this page at the moment. \nThis is probably because this page is under development.');
   window.location.replace('/dashboard');
+}
