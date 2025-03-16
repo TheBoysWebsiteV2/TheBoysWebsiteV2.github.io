@@ -1,5 +1,5 @@
 const productsContainer = document.getElementsByClassName("productscontainer")[0];
-const productsContainerLen = productsContainer.length
+const productsContainerLen = productsContainer.getElementsByClassName("productcontainer").length;
 
 for (let x = 0; x < productsContainerLen; x++) {
   z = productsContainer.getElementsByClassName("productcontainer")[x].id
