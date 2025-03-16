@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let x = 0; x < productsContainerLen; x++) {
             let z = productContainers[x].id;
             document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1.png';
-            document.getElementById('productTitle_' + z).innerHTML = theShopItemNames[567394];
+            document.getElementById('productTitle_' + z).innerHTML = '<strong>' + theShopItemNames[567394] + '</strong>;
         }
     } else {
         console.error("No elements with class 'productscontainer' found.");
