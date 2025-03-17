@@ -17,12 +17,28 @@
         /*max-width: 150px;*/
         height: 75%;
       }
-      div.productscontainer {
+      div.productcontainer {
         width: auto;
         height: auto;
       }
-      
-      div.productcontainer {
+      button.purchaseButton {
+        display: block;
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      button.purchaseButton:hover {
+        background-color: #45a049;
+      }
+
+      /*div.productcontainer {
         width: auto;
         height: auto;
         border: 2px solid black;
@@ -33,7 +49,7 @@
         width: 75%;
         max-width: 150px;
         height: 75%;
-      }
+      }*/
     </style>
     <script src="/data/scripts/adminData.js"></script>
     <script src="/data/scripts/admin_proper_login_check.js"></script>
@@ -57,21 +73,20 @@
     </header>
     <article>
       <div class="logoheading">
-        <p><img src="/data/images/the-shop-logo.png"/></p>
+        <p><img src="/data/images/the-shop-logo.png"></p>
         <br>
         <center>
           <p><a href="/dashboard/the-shop" class="hl1">Home</a></p>
         </center>
         <hr>
       </div>
-      <div class="productscontainer">
-        <div class="productcontainer" id="562394">
-          <center>
-            <p><img src="/data/images/the-shop-loading-icon.gif" id="productImage_562394" border="1px"/></p>
-          </center>
-          <p id="productTitle_562394"><strong>Loading...</strong></p>
-          <p id="productPrice_562394">£0.00</p>
-        </div>
+      <div class="productcontainer">
+        <p><image src="/data/images/the-shop-loading-icon.gif" style="float: left;" id="productImage"></p>
+        <h1 id="productName">Loading...</h1>
+        <h2 id="productPrice">£0.00</h2>
+        <center>
+          <button id="addToCartButton" class="purchaseButton">Add To Cart</button>
+        </center>
       </div>
     </article>
   </body>
