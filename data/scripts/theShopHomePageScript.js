@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let x = 0; x < productsContainerLen; x++) {
             let z = productContainers[x].id;
             document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1.png';
-            document.getElementById('productTitle_' + z).innerHTML = theShopItemNames[567394];
-            document.getElementById('productPrice_' + z).innerHTML = theShopItemPrices[567394];
+            document.getElementById('productTitle_' + z).innerHTML = theShopItemNames[z];
+            document.getElementById('productPrice_' + z).innerHTML = theShopItemPrices[z];
 
             // Add hover effect
             productContainers[x].addEventListener('mouseover', function() {
@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
             productContainers[x].addEventListener('mouseout', function() {
                 this.style.backgroundColor = ''; // Reset background color when not hovering
                 document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1.png';
+            });
+            productContainers[x].addEventListener('click', () => {
+              window.location.href = '/dashboard/the-shop/product?code=' + z;
             });
         }
     } else {
