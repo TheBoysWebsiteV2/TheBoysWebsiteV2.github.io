@@ -32,10 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             productContainers[x].addEventListener('mouseover', function() {
                 this.style.backgroundColor = '#f0f0f0'; // Change background color on hover
                 this.style.cursor = 'pointer'; // Change cursor to pointer on hover
-                if (loadsecond == false) {
-                    loadsecond = true;
-                    document.getElementById('productImage_' + z).src = '/data/images/the-shop-loading-icon.gif';
-                }
+                document.getElementById('productImage_' + z).src = '/data/images/the-shop-loading-icon.gif';
                 document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_2.png';
             });
 
