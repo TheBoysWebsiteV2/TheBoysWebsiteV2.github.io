@@ -1,6 +1,6 @@
 const theShopItemNames = {
-    567394: 'Clicker Fidget'
+    562394: 'Clicker Fidget'
 }
 const theShopItemPrices = {
-    567394: '£0.20'
+    562394: '£0.20'
 }
