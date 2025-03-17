@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('productPrice' + z).innerHTML = theShopItemPrices[z];
 });
 
-function addToCart {
+function addToCart() {
   const b = sessionStorage.getItem('theShopCart');
   if (b == null) {
     sessionStorage.setItem('theShopCart', z);
