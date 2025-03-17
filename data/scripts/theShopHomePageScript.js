@@ -24,9 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         for (let x = 0; x < productsContainerLen; x++) {
             let z = productContainers[x].id;
+            console.log(z)
             document.getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1.png';
             document.getElementById('productTitle_' + z).innerHTML = theShopItemNames[z];
+            console.log(theShopItemNames[z])
             document.getElementById('productPrice_' + z).innerHTML = theShopItemPrices[z];
+            console.log(theShopItemPrices[z])
 
             // Add hover effect
             productContainers[x].addEventListener('mouseover', function() {
