@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function addToCart {
   if (sessionStorage.getItem('theShopCart') == null) {
     sessionStorage.setItem('theShopCart', bgh);
+    alert('Item succesfully added to cart!');
   } else {
     sessionStorage.setItem('theShopCart', ' ' + bgh);
+    alert('Item succesfully added to cart!');
   }
 }
