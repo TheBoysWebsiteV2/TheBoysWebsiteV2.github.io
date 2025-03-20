@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('productTitle').innerHTML = theShopItemNames[bgh];
   document.getElementById('productPrice').innerHTML = theShopItemPrices[bgh];
 });
-function addToCart {
+function addToCart() {
   if (sessionStorage.getItem('theShopCart') == null) {
     sessionStorage.setItem('theShopCart', bgh);
     alert('Item succesfully added to cart!');
