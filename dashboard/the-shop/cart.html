@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tab-title">The Shop | The Boys Website V2</title>
+    <link type="text/css" rel="stylesheet" href="/data/css/standard_stylesheet.css">
+    <style>
+      article {
+        font-family: sans-serif !important;
+      }
+      div.logoheading {
+        height: auto;
+      }
+      div.logoheading img {
+        width: 75%;
+        /*max-width: 150px;*/
+        height: 75%;
+      }
+      div.productscontainer {
+        width: auto;
+        height: auto;
+      }
+      
+      div.productcontainer {
+        width: auto;
+        height: auto;
+        border: 2px solid black;
+        width: fit-content;
+        block-size: fit-content;
+      }
+      div.productcontainer img {
+        width: 75%;
+        max-width: 150px;
+        height: 75%;
+      }
+    </style>
+    <script src="/data/scripts/adminData.js"></script>
+    <script src="/data/scripts/admin_proper_login_check.js"></script>
+    <script src="/data/scripts/theShopData.js"></script>
+    <script src="/data/scripts/makePageAdminOnly.js"></script>
+    <script src="/data/scripts/theShopHomePageScript.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>The Shop | The Boys Website V2</h1>
+      <nav>
+        <ul>
+          <li><a href="/dashboard/home">Home</a></li>
+          <li><a href="/dashboard/funny-things">Funny Things</a></li>
+          <li><a href="/dashboard/secret-things">Secret Things</a></li>
+          <li><a href="/dashboard/text-chat">Text Chat</a></li>
+          <li><a href="/dashboard/notes">Notes</a></li>
+          <li class="selected">The Shop</li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <div class="logoheading">
+        <p><img src="/data/images/the-shop-logo.png"/></p>
+        <br>
+        <center>
+          <p><strong><u>Home</u></strong></p>
+        </center>
+        <hr>
+      </div>
+      <div class="productscontainer">
+        <div class="productcontainer" id="562394">
+          <center>
+            <p><img src="/data/images/the-shop-loading-icon.gif" id="productImage_562394" border="1px"/></p>
+          </center>
+          <p id="productTitle_562394"><strong>Loading...</strong></p>
+          <p id="productPrice_562394">£0.00</p>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
