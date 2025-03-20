@@ -9,7 +9,7 @@ function addToCart() {
     sessionStorage.setItem('theShopCart', bgh);
     alert('Item succesfully added to cart!');
   } else {
-    sessionStorage.setItem('theShopCart', ' ' + bgh);
+    sessionStorage.setItem('theShopCart', sessionStorage.getItem('theShopCart') + ' ' + bgh);
     alert('Item succesfully added to cart!');
   }
 }
