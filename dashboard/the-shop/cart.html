@@ -34,6 +34,22 @@
         max-width: 150px;
         height: 75%;
       }
+      button.checkoutButton {
+        display: block;
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      button.checkoutButton:hover {
+        background-color: #45a049;
+      }
     </style>
     <script src="/data/scripts/adminData.js"></script>
     <script src="/data/scripts/admin_proper_login_check.js"></script>
@@ -60,19 +76,20 @@
         <p><img src="/data/images/the-shop-logo.png"/></p>
         <br>
         <center>
-          <p><strong><u>Home</u></strong></p>
+          <p><a href="/dashboard/the-shop" class="hl1">Home</a></p>
+          <p><strong><u>Cart</u></strong></p>
         </center>
         <hr>
       </div>
+      <h1>Cart</h1>
+      <h2>My Cart</h2>
       <div class="productscontainer">
-        <div class="productcontainer" id="562394">
-          <center>
-            <p><img src="/data/images/the-shop-loading-icon.gif" id="productImage_562394" border="1px"/></p>
-          </center>
-          <p id="productTitle_562394"><strong>Loading...</strong></p>
-          <p id="productPrice_562394">£0.00</p>
-        </div>
       </div>
+      <h3 id="totalPriceText">Total: £0.00</h3>
+      <h2>Checkout</h2>
+      <p>If you are happy with your cart, hit 'Go To Checkout'.</p>
+      <p><strong>PLEASE NOTE:</strong> You will need to type your login again before ordering for security.</p>
+      <button id="checkoutButton" class="checkoutButton">Go To Checkout</button>
     </article>
   </body>
 </html>
