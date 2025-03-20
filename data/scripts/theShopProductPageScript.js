@@ -4,3 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('productTitle').innerHTML = theShopItemNames[bgh];
   document.getElementById('productPrice').innerHTML = theShopItemPrices[bgh];
 });
+function addToCart {
+  if (sessionStorage.getItem('theShopCart') == null) {
+    sessionStorage.setItem('theShopCart', bgh);
+  } else {
+    sessionStorage.setItem('theShopCart', ' ' + bgh);
+  }
+}
