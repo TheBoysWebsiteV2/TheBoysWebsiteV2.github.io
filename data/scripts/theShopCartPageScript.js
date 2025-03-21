@@ -9,7 +9,7 @@ if (cart == null) {
     const currentItemCode = splitCart[x];
     const itemElement = document.createElement('div');
     itemElement.class = 'productContainer';
-    itemElement.innerHTML = '<p><img src="/data/images/the_shop_' + currentItemCode + '_product-image.png"/></p><p><strong>' + theShopItemNames[currentItemCode] + '</strong></p><br><p>' + theShopItemPrices[currentItemCode] + '</p>';
+    itemElement.innerHTML = '<p><img src="/data/images/the_shop_' + currentItemCode + '_product-image_1.png"/></p><p><strong>' + theShopItemNames[currentItemCode] + '</strong></p><br><p>' + theShopItemPrices[currentItemCode] + '</p>';
     cartItemsDiv.appendChild(itemElement);
   };
 };
