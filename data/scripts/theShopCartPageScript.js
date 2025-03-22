@@ -8,7 +8,7 @@ if (cart == null) {
   for (let x = 0; x < cartItemsLen; x++) {
     const currentItemCode = splitCart[x];
     const itemElement = document.createElement('div');
-    itemElement.setAttribute('class', 'productContainer');
+    itemElement.setAttribute('class', 'productcontainer');
     itemElement.innerHTML = '<p><img src="/data/images/the_shop_' + currentItemCode + '_product-image_1.png"/></p><p><strong>' + theShopItemNames[currentItemCode] + '</strong></p><br><p>' + theShopItemPrices[currentItemCode] + '</p>';
     cartItemsDiv.appendChild(itemElement);
   };
