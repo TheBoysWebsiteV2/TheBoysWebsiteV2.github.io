@@ -39,7 +39,7 @@ if (cart == null) {
         <p><img src="/data/images/the_shop_${currentItemCode}_product-image_1.png"/></p>
         <p><strong>${theShopItemNames[currentItemCode]}</strong></p>
         <br>
-        <p>${theShopItemPrices[currentItemCode]}</p>
+        <p>£${theShopItemPrices[currentItemCode]}</p>
         <button class="removeButton">Remove</button>`;
       cartItemsDiv.appendChild(itemElement);
     } else {
