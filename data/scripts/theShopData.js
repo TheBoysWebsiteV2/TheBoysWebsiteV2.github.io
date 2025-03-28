@@ -6,3 +6,4 @@ const theShopItemPrices = {
 }
 const theShopItemPricesAsNum = {
     562394: 0.20
+}
