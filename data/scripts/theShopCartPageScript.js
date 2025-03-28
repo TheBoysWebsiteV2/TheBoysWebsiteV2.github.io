@@ -19,7 +19,9 @@
 // Ensure `theShopItemNames` and `theShopItemPrices` are defined or imported
 const cart = sessionStorage.getItem('theShopCart'); 
 let cartItemsDiv = document.getElementById('cartItemsDiv');
-
+function removeItem(num) {
+  //TO BE CONTINUED
+}
 if (cart == null) {
   cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
 } else {
