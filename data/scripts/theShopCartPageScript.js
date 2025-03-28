@@ -25,14 +25,14 @@ if (cart == null) {
 } else {
   const splitCart = cart.split(' ');
   console.log(splitCart);
-  
+  let totalSoFar = 0.00;
   for (let x = 0; x < splitCart.length; x++) {
     const currentItemCode = splitCart[x];
-    let totalSoFar = 0.00;
     console.log(currentItemCode);
     
     // Check if `currentItemCode` is valid and exists in `theShopItemNames`
     if (theShopItemNames[currentItemCode]) {
+      totalSoFar = totalSoFar + theShopItemPrices[currentItemCode];
       const itemElement = document.createElement('div');
       itemElement.setAttribute('class', 'productcontainer');
       itemElement.innerHTML = `
