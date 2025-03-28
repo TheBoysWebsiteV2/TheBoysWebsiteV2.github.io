@@ -32,7 +32,7 @@ if (cart == null) {
     
     // Check if `currentItemCode` is valid and exists in `theShopItemNames`
     if (theShopItemNames[currentItemCode]) {
-      totalSoFar = totalSoFar + theShopItemPrices[currentItemCode];
+      totalSoFar = parseFloat((totalSoFar + theShopItemPricesAsNum[currentItemCode]).toFixed(2));
       const itemElement = document.createElement('div');
       itemElement.setAttribute('class', 'productcontainer');
       itemElement.innerHTML = `
@@ -46,5 +46,6 @@ if (cart == null) {
       console.warn(`Item code ${currentItemCode} not found in theShopItemNames`);
     }
   }
+  if (totalSoFar.length                                      
   document.getElementById('totalPriceText').innerHTML = '£' + totalSoFar;
 }
