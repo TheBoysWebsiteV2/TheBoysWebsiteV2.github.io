@@ -28,6 +28,7 @@ if (cart == null) {
   
   for (let x = 0; x < splitCart.length; x++) {
     const currentItemCode = splitCart[x];
+    let totalSoFar = 0.00;
     console.log(currentItemCode);
     
     // Check if `currentItemCode` is valid and exists in `theShopItemNames`
@@ -39,7 +40,7 @@ if (cart == null) {
         <p><strong>${theShopItemNames[currentItemCode]}</strong></p>
         <br>
         <p>${theShopItemPrices[currentItemCode]}</p>
-        <button class="removeFromCartButton">Remove</button>`;
+        <button class="removeButton">Remove</button>`;
       cartItemsDiv.appendChild(itemElement);
     } else {
       console.warn(`Item code ${currentItemCode} not found in theShopItemNames`);
