@@ -46,4 +46,5 @@ if (cart == null) {
       console.warn(`Item code ${currentItemCode} not found in theShopItemNames`);
     }
   }
+  document.getElementById('totalPriceText').innerHTML = '£' + totalSoFar;
 }
