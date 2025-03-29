@@ -30,7 +30,7 @@ function removeItem(num) {
   window.location.reload(); // Refresh to show the updated cart
 }
 
-if (cart == null) {
+if ((cart == null) || (cart == '')){
   cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
 } else {
   const splitCart = cart.split(' ');
