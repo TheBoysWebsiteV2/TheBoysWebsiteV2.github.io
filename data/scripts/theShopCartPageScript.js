@@ -21,20 +21,15 @@ const cart = sessionStorage.getItem('theShopCart');
 let cartItemsDiv = document.getElementById('cartItemsDiv');
 function removeItem(num) {
   //TO BE CONTINUED
-  let newCart = cart;
-  //num=num-1;
-  if (num == 0) {
-    newCart = newCart.slice(7, cart.length);
-  } else if (num == 1) {
-    newCart = cart.slice(0, 6) + cart.slice(13, cart.length);
+  let cartArray = cart.split(' '); // Split the cart into an array of items
+  if (num >= 0 && num < cartArray.length) {
+    cartArray.splice(num, 1); // Remove the item at the specified index
   }
-  else {
-    let a = 6 + num*7;
-    newCart = cart.slice(0, a) + cart.slice(a+7, cart.length);
-  }
-  sessionStorage.setItem('theShopCart', newCart); //Change Cart
-  window.location.reload(); //Restart to show new cart after item removal.
+  let newCart = cartArray.join(' '); // Join the array back into a string
+  sessionStorage.setItem('theShopCart', newCart); // Update the cart
+  window.location.reload(); // Refresh to show the updated cart
 }
+
 if (cart == null) {
   cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
 } else {
