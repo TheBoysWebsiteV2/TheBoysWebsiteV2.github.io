@@ -21,6 +21,19 @@ const cart = sessionStorage.getItem('theShopCart');
 let cartItemsDiv = document.getElementById('cartItemsDiv');
 function removeItem(num) {
   //TO BE CONTINUED
+  let newCart = cart;
+  //num=num-1;
+  if (num == 0) {
+    newCart = newCart.split(7, cart.length);
+  } else if (num == 1) {
+    newCart = cart.split(0, 6) + cart.split(13, cart.length);
+  }
+  else {
+    let a = 6 + num*7;
+    newCart = cart.split(0, a) + cart.split(a+7, cart.length);
+  }
+  sessionStorage.setItem('theShopCart', newCart); //Change Cart
+  window.location.reload(); //Restart to show new cart after item removal.
 }
 if (cart == null) {
   cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
@@ -42,7 +55,7 @@ if (cart == null) {
         <p><strong>${theShopItemNames[currentItemCode]}</strong></p>
         <br>
         <p>£${theShopItemPrices[currentItemCode]}</p>
-        <button class="removeButton">Remove</button>`;
+        <button class="removeButton" onclick="removeItem(` + x + `)">Remove</button>`;
       cartItemsDiv.appendChild(itemElement);
     } else {
       console.warn(`Item code ${currentItemCode} not found in theShopItemNames`);
