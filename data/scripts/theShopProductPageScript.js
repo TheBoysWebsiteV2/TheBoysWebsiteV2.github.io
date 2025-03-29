@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('productPrice').innerHTML = '£' + theShopItemPrices[bgh];
 });
 function addToCart() {
-  if (sessionStorage.getItem('theShopCart') == null) {
+  if ((sessionStorage.getItem('theShopCart') == null) || (sessionStorage.getItem('theShopCart') == '')) {
     sessionStorage.setItem('theShopCart', bgh);
     alert('Item succesfully added to cart!');
   } else {
