@@ -24,13 +24,13 @@ function removeItem(num) {
   let newCart = cart;
   //num=num-1;
   if (num == 0) {
-    newCart = newCart.split(7, cart.length);
+    newCart = newCart.slice(7, cart.length);
   } else if (num == 1) {
-    newCart = cart.split(0, 6) + cart.split(13, cart.length);
+    newCart = cart.slice(0, 6) + cart.slice(13, cart.length);
   }
   else {
     let a = 6 + num*7;
-    newCart = cart.split(0, a) + cart.split(a+7, cart.length);
+    newCart = cart.slice(0, a) + cart.slice(a+7, cart.length);
   }
   sessionStorage.setItem('theShopCart', newCart); //Change Cart
   window.location.reload(); //Restart to show new cart after item removal.
