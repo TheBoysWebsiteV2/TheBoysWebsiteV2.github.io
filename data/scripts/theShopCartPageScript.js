@@ -43,14 +43,12 @@ if ((cart == null) || (cart == '')){
     // Check if `currentItemCode` is valid and exists in `theShopItemNames`
     if (theShopItemNames[currentItemCode]) {
       totalSoFar = parseFloat((totalSoFar + theShopItemPricesAsNum[currentItemCode]).toFixed(2));
-      const itemElement = document.createElement('div');
+      const itemElement = document.createElement('tr');
       itemElement.setAttribute('class', 'productcontainer');
       itemElement.innerHTML = `
-        <p><img src="/data/images/the_shop_${currentItemCode}_product-image_1.png"/></p>
-        <p><strong>${theShopItemNames[currentItemCode]}</strong></p>
-        <br>
-        <p>£${theShopItemPrices[currentItemCode]}</p>
-        <button class="removeButton" onclick="removeItem(` + x + `)">Remove</button>`;
+        <td>${theShopItemNames[currentItemCode]}</td>
+        <td>£${theShopItemPrices[currentItemCode]}</td>
+        <td><button class="removeButton" onclick="removeItem(` + x + `)">Remove</button></td>`;
       cartItemsDiv.appendChild(itemElement);
     } else {
       console.warn(`Item code ${currentItemCode} not found in theShopItemNames`);
