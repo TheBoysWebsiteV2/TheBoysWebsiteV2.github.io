@@ -31,7 +31,7 @@ function removeItem(num) {
 }
 
 if ((cart == null) || (cart == '')){
-  cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
+  //cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
 } else {
   const splitCart = cart.split(' ');
   console.log(splitCart);
