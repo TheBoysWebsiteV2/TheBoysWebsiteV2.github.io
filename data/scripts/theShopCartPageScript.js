@@ -44,7 +44,7 @@ if ((cart == null) || (cart == '')){
     if (theShopItemNames[currentItemCode]) {
       totalSoFar = parseFloat((totalSoFar + theShopItemPricesAsNum[currentItemCode]).toFixed(2));
       const itemElement = document.createElement('tr');
-      itemElement.setAttribute('class', 'productcontainer');
+      //itemElement.setAttribute('class', 'productcontainer');
       itemElement.innerHTML = `
         <td>${theShopItemNames[currentItemCode]}</td>
         <td>£${theShopItemPrices[currentItemCode]}</td>
