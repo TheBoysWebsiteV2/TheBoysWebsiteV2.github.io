@@ -30,6 +30,13 @@ function removeItem(num) {
   window.location.reload(); // Refresh to show the updated cart
 }
 
+function goToCheckout() {
+  let orderWindow = window.open(
+    "order/popup",
+    "Order | The Shop | The Boys Website V2",
+    "width=800,height=600,left=200,top=150,resizable=no,scrollbars=no"
+  );
+}
 if ((cart == null) || (cart == '')){
   //cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
 } else {
