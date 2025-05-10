@@ -1,8 +1,14 @@
 <html>
   <head>
     <title>The Shop -</title>
+    <style>
+      font-family: sans-serif;
+    </style>
   </head>
   <body>
-    <p>Popup</p>
+    <p id="p"></p>
   </body>
 </html>
+<script>
+  document.getElementById('p').innerHTML = sessionStorage.getItem('theShopCart');
+</script>
