@@ -34,7 +34,7 @@ function goToCheckout() {
   let orderWindow = window.open(
     "order",
     "Order | The Shop | The Boys Website V2",
-    "width=800,height=600,left=200,top=150,resizable=no,scrollbars=no"
+    "width=800,height=600,left=200,top=150,dialog=yes,resizable=no,scrollbars=no"
   );
 }
 if ((cart == null) || (cart == '')){
