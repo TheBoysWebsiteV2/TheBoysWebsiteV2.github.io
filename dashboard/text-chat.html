@@ -143,30 +143,8 @@
         const messageElement = document.createElement('div');
         messageElement.classList.add('message');
 
-        if (message.name === 'pollpost') {
-          messageElement.style = 'background-color: lightblue;';
-
-          let pollHTML = `<strong>${message.Title}</strong><br>`;
-          for (let key in message) {
-            if (key.startsWith('Option') && !key.endsWith('-votes')) {
-              pollHTML += `<input type="radio" name="poll-${snapshot.key}" value="${message[key]}" onclick="vote('${snapshot.key}', '${key}')"> ${message[key]}<br>`;
-              pollHTML += `<ul id="${snapshot.key}-${key}-votes"></ul>`;
-            }
-          }
-          messageElement.innerHTML = pollHTML;
-
-          // Show votes
-          for (let key in message) {
-            if (key.startsWith('Option') && key.endsWith('-votes')) {
-              const optionKey = key.replace('-votes', '');
-              const votes = message[key] || [];
-              const votesElement = document.getElementById(`${snapshot.key}-${optionKey}-votes`);
-              if (votesElement) {
-                votesElement.innerHTML = votes.map(user => `<li>${user}</li>`).join('');
-              }
-            }
-          }
-        } else if (message.name === 'blogpost') {
+          
+        if (message.name === 'blogpost') {
           messageElement.style = 'background-color: yellow; text-align: center;';
           messageElement.textContent = `${message.text}`;
         } else {
@@ -191,38 +169,6 @@
           messageInput.value = '';
         }
       });
-
-      function vote(pollId, optionKey) {
-        const user = sessionStorage.getItem('currentAccount');
-        const pollRef = database.ref(`messages/${pollId}`);
-
-        pollRef.once('value', (snapshot) => {
-          const poll = snapshot.val();
-          let voted = false;
-
-          for (let key in poll) {
-            if (key.startsWith('Option') && key.endsWith('-votes')) {
-              const votes = poll[key] || [];
-              if (votes.includes(user)) {
-                voted = true;
-                break;
-              }
-            }
-          }
-
-          if (!voted) {
-            const optionVotes = poll[`${optionKey}-votes`] || [];
-            if (!optionVotes.includes(user)) {
-              optionVotes.push(user);
-              pollRef.child(`${optionKey}-votes`).set(optionVotes);
-              const votesElement = document.getElementById(`${pollId}-${optionKey}-votes`);
-              if (votesElement) {
-                votesElement.innerHTML = optionVotes.map(user => `<li>${user}</li>`).join('');
-              }
-            }
-          }
-        });
-      }
     </script>
   </body>
 </html>
