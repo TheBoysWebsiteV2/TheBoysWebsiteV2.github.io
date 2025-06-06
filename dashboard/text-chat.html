@@ -160,7 +160,8 @@
         const message = messageInput.value;
         if (message !== '') {
           const d = new Date();
-          const datestring = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + '|' + d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear();
+          let themonth = d.getMonth()+1
+          const datestring = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + '|' + d.getDate() + '/' + themonth + '/' + d.getFullYear();
           messagesRef.push({
             date: datestring,
             name: sessionStorage.getItem('currentAccount'),
