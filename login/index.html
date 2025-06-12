@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login|The Boys Website V2</title>
+    <title>Login | The Boys Website V2</title>
     <style>
       body {
         font-family: 'Arial', sans-serif;
@@ -51,6 +51,14 @@
       button:hover {
         background-color: #45a049;
       }
+      a {
+        color: black;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: black;
+        text-decoration: none;
+      }
     </style>
     <script src="/data/scripts/adminData.js"></script>
     <script src="/data/scripts/adminLoginPageScript.js"></script>
@@ -63,6 +71,7 @@
         <input type="password" id="password" placeholder="Password" required>
         <h5 id="iscorrect"></h5>
         <button type="submit">Login</button>
+        <p>Having Trouble Logging in? Click <a href="loginhelp">here</a>.</p>
       </form>
     </div>
     <script>
