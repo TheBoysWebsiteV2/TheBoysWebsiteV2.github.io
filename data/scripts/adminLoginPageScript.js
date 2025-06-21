@@ -6,8 +6,8 @@ function login() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     var text = document.getElementById('iscorrect');
-    text.style = 'color: blue;';
-    text.innerHTML = 'Checking...';
+    /*text.style = 'color: blue;';
+    text.innerHTML = 'Checking...';*/
 
     console.log("Username: " + username); // Debugging step
     console.log("Password: " + password); // Debugging step
@@ -17,7 +17,8 @@ function login() {
             text.innerHTML = 'Correct. Logging you on...';
             text.style.color = 'green';
             sessionStorage.setItem('gone-through-login-page', 'true');
-            window.location.replace('/login/loginservice?username=' + username + '&password=' + password);
+            let id = unametoid[username]
+            window.location.replace('/login/loginservice?accountID=' + id);
         } else {
             text.innerHTML = 'Incorrect username or password.';
             text.style.color = 'red';
