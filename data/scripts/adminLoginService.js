@@ -10,7 +10,7 @@ sessionStorage.setItem('session-id', z);*/
 //hack prevention
 console.info('ϟSCRIPT-LOAD: adminSecurityCheck.js [SUCCESFUL]');
 var ca = sessionStorage.getItem('currentAccount'); var referrer = document.referrer;
-if ((referrer == '') && (qr='f')){
+if ((referrer == '') && (qr='f')) {
   window.location.replace('/login?source=loginsericewrongurl');
 } else if (referrer) {
   if (ca == null) {
