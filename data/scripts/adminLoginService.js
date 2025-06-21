@@ -12,7 +12,7 @@ console.info('ϟSCRIPT-LOAD: adminSecurityCheck.js [SUCCESFUL]');
 var ca = sessionStorage.getItem('currentAccount'); var referrer = document.referrer;
 if ((referrer == '') && (qr='f')) {
   window.location.replace('/login?source=loginsericewrongurl');
-} else if (referrer) {
+} else {
   if (ca == null) {
     //continue
   } else {
