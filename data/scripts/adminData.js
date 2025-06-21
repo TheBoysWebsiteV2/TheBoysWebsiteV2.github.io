@@ -15,8 +15,8 @@ const ranks = {
 };
 const lockedAccounts = {
     'VBurden': 'TRUE',
-    'TGreen': 'TRUE',
-    'DKennedy': 'FALSE',
+    'TGreen': 'FALSE',
+    'DKennedy': 'TRUE',
     'OVermunt': 'FALSE',
     'LKane': 'FALSE'
 };
