@@ -18,7 +18,7 @@ function login() {
             text.style.color = 'green';
             sessionStorage.setItem('gone-through-login-page', 'true');
             let id = unametoid[username]
-            window.location.replace('/login/loginservice?accountID=' + id);
+            window.location.href = '/login/loginservice?accountID=' + id + '&qr=f';
         } else {
             text.innerHTML = 'Incorrect username or password.';
             text.style.color = 'red';
