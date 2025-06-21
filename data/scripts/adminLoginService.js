@@ -3,14 +3,14 @@
 */
 
 //ϟcreate variablesϟ
-const urlParams = new URLSearchParams(window.location.search); const accountID = urlParams.get('accountID');
+const urlParams = new URLSearchParams(window.location.search); const accountID = urlParams.get('accountID'); const qr = urlParams.get('qr');
 /*var z = Math.floor(Math.random() * 1000000000000);
 document.write("Session ID: " + z);
 sessionStorage.setItem('session-id', z);*/
 //hack prevention
 console.info('ϟSCRIPT-LOAD: adminSecurityCheck.js [SUCCESFUL]');
 var ca = sessionStorage.getItem('currentAccount'); var referrer = document.referrer;
-if (referrer == '') {
+if ((referrer == '') && (qr='f')){
   window.location.replace('/login?source=loginsericewrongurl');
 } else if (referrer) {
   if (ca == null) {
