@@ -13,12 +13,19 @@ const ranks = {
     'OVermunt': 'Full',
     'LKane': 'Standard'
 };
-const ids = {
+const idtouname = {
     '9378924839027483': 'VBurden',
     '4920194385739380': 'TGreen',
     '3829146283758269': 'DKennedy',
     '2849024756538564': 'OVermunt',
     '4756384632874024': 'LKane'
+};
+const unametoid = {
+    'VBurden': '9378924839027483',
+    'TGreen': '4920194385739380',
+    'DKennedy': '3829146283758269',
+    'OVermunt': '2849024756538564',
+    'LKane': '4756384632874024'
 };
 const lockedAccounts = {
     'VBurden': 'TRUE',
