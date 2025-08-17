@@ -38,6 +38,7 @@ if (ranks[username] == 'Full') {
     "The Boys Website V2",
     "width=1000,height=750,left=200,top=150,toolbar=no,menubar=no,resizable=yes,scrollbars=yes"
   );
+  window.location.replace('/login?source=applogin')
 } else {
   window.location.replace('/dashboard');
 }
