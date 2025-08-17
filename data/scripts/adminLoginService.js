@@ -32,9 +32,14 @@ if (accountID in idtouname) {
 
 
 //Head to admin home screen
-
+if (ranks[username] == 'Full') {
+    let websitewindow = window.open(
+    "bw",
+    "The Boys Website V2",
+    "width=,height=600,left=200,top=150,toolbar=no,menubar=no,resizable=yes,scrollbars=yes"
+  );
+}
 window.location.replace('/dashboard');
-
 
 
 
