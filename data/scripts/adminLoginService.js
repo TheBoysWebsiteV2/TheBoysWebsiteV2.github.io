@@ -15,19 +15,57 @@ if ((referrer == '') && (qr='f')) {
 } else {
   if (ca == null) {
     //continue
+    if (accountID in idtouname) {
+    if (lockedAccounts[idtouname[accountID]] == 'TRUE') {
+      window.location.replace('/locked-account')
+    } else {
+    username=idtouname[accountID]
+    sessionStorage.setItem('currentAccount', username);
+    sessionStorage.setItem('userRank', ranks[username]);
+    if (ranks[username] == 'Full') {
+      let websitewindow = window.open(
+        "/dashboard",
+        "The Boys Website V2",
+        "width=1000,height=750,left=200,top=150,toolbar=no,menubar=no,resizable=yes,scrollbars=yes"
+      );
+      window.location.replace('/login?source=applogin')
+  } else {
+      window.location.replace('/dashboard');
+  }
+  }
+} else {
+    window.location.replace('/login?source=accountNotFound');
+}
+
   } else {
     window.location.replace('/login?source=loginsericeusernameinsessionstorage');
   }
 }
 
 console.info('Hack checks did not detect any hacks.');
+/*
 
 if (accountID in idtouname) {
+  if (lockedAccounts[idtouname[accountID]] == 'TRUE') {
+    window.location.replace('/locked-account')
+  } else {
   username=idtouname[accountID]
   sessionStorage.setItem('currentAccount', username);
   sessionStorage.setItem('userRank', ranks[username]);
+  if (ranks[username] == 'Full') {
+    let websitewindow = window.open(
+      "/dashboard",
+      "The Boys Website V2",
+      "width=1000,height=750,left=200,top=150,toolbar=no,menubar=no,resizable=yes,scrollbars=yes"
+    );
+    window.location.replace('/login?source=applogin')
 } else {
-  window.location.replace('/login?source=accountNotFound');
+    window.location.replace('/dashboard');
+}
+
+  }
+} else {
+    window.location.replace('/login?source=accountNotFound');
 }
 
 
@@ -42,7 +80,7 @@ if (ranks[username] == 'Full') {
 } else {
   window.location.replace('/dashboard');
 }
-
+*/
 
 /*
 ϟAdmin login serviceϟ
