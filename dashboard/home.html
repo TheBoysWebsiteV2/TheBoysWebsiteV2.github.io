@@ -7,6 +7,11 @@
     <link type="text/css" rel="stylesheet" href="/data/css/standard_stylesheet.css">
     <script src="/data/scripts/adminData.js"></script>
     <script src="/data/scripts/admin_proper_login_check.js"></script>
+    <script defer>
+      let days = document.getElementByID('holsdays')
+      const d = new Date();
+      days.innerHTML = 27 - d.getDate()
+    </script>
   </head>
   <body>
     <header>
