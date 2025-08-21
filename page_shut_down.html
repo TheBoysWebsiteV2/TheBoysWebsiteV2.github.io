@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tab-title">Home | The Boys Website V2</title>
+    <link type="text/css" rel="stylesheet" href="/data/css/standard_stylesheet.css">
+    <script src="/data/scripts/adminData.js"></script>
+    <script src="/data/scripts/admin_proper_login_check.js"></script>
+    <script defer>
+      let days = document.getElementByID('holsdays');
+      const d = new Date();
+      days.innerHTML = 27 - d.getDate();
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Page Shut Down | The Boys Website V2</h1>
+      <nav>
+        <ul>
+          <li><a href="/dashboard/home">Home</a></li>
+          <li><a href="/dashboard/funny-things">Funny Things</a></li>
+          <li><a href="/dashboard/secret-things">Secret Things</a></li>
+          <li><a href="/dashboard/text-chat">Text Chat</a></li>
+          <li><a href="/dashboard/notes">Notes</a></li>
+          <li><a href="/dashboard/the-shop">The Shop</a></li>
+          <li class="selected">Page Shut Down</li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <center><p><img src="/data/images/logo.png" border="2px" alt="Boys logo"></p></center>
+      <h1>Page Shut Down</h1>
+      <p>This page has been shut down.</p>
+    </article>
+  </body>
+</html>
