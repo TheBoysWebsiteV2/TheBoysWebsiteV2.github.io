@@ -23,12 +23,13 @@ if ((referrer == '') && (qr='f')) {
     sessionStorage.setItem('currentAccount', username);
     sessionStorage.setItem('userRank', ranks[username]);
     if (ranks[username] == 'Full') {
-      let websitewindow = window.open(
+      /*let websitewindow = window.open(
         "/dashboard",
         "The Boys Website V2",
         "width=1000,height=750,left=200,top=150,toolbar=no,menubar=no,resizable=yes,scrollbars=yes"
       );
-      window.location.replace('/login?source=applogin')
+      window.location.replace('/login?source=applogin')*/
+      window.location.replace('/dashboard');
   } else {
       window.location.replace('/dashboard');
   }
