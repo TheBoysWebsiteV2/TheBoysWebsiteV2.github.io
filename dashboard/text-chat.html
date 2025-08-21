@@ -111,65 +111,24 @@
         </ul>
       </nav>
     </header>
-    <div id="chat-container">
-      <h2>The Boys Website V2 Text Chat</h2>
-      <div id="messages"></div>
-      <input type="text" id="message-input" placeholder="Type your message...">
-      <button id="send-button">Send</button>
-    </div>
-
-    <script>
-      window.onload = function() {
-        document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
-      };
+    <h1>Text Chat shut down.</h1>
+    <p>
+      Hello all,
       
-      const firebaseConfig = {
-        apiKey: "AIzaSyDEJcE63xtRVj-C4d_Mk5XewMQ2PJIsJsM",
-        authDomain: "theboyswebsitev2textchat.firebaseapp.com",
-        databaseURL: "https://theboyswebsitev2textchat-default-rtdb.firebaseio.com",
-        projectId: "theboyswebsitev2textchat",
-        storageBucket: "theboyswebsitev2textchat.firebasestorage.app",
-        messagingSenderId: "93215531426",
-        appId: "1:93215531426:web:77767300257ec801eb92fb"
-      };
-      //measurementId: "G-D9C7C34EQJ"
-      
-      firebase.initializeApp(firebaseConfig);
-      const database = firebase.database();
-      const messagesRef = database.ref('messages');
+      I have shut down the text chat as it takes a lot of work to maintain, and not enough people use it to justify keeping it.
+      Sadly, this may start happening to the whole website, as no one is logging on enough to justify the work it requires.
+      It takes time & effort to run a website, and I do not want to do this if no one uses the website.
+      I know this may be annoying, especially as I get the sense that this is the part of the website that people find most useful.
+      Sadly however, it also probably takes the most time & effort to maintain.
+      You may be wondering, why not just leave the text chat, instead of shutting it down.
+      The thing is, I need to continue updating it to keep the messages secure, and leaving it sitting here, without updates, would result in multiple things, including the text chat messages being less secure, errors sending messages, incorrect time stamps, and ultimitely, the whole text chat eventually breking.
+      The text chat may come back in future, I do not know.
+      But for now, I'm afraid, it isn't avalible.
 
-      messagesRef.on('child_added', (snapshot) => {
-        const message = snapshot.val();
-        const messageElement = document.createElement('div');
-        messageElement.classList.add('message');
+      Sincerely,
 
-          
-        if (message.name === 'blogpost') {
-          messageElement.style = 'background-color: yellow; text-align: center;';
-          messageElement.textContent = `${message.text}`;
-        } else {
-          messageElement.textContent = `${message.date}|${message.name}: ${message.text}`;
-        }
-
-        document.getElementById('messages').appendChild(messageElement);
-        document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
-      });
-
-      document.getElementById('send-button').addEventListener('click', () => {
-        const messageInput = document.getElementById('message-input');
-        const message = messageInput.value;
-        if (message !== '') {
-          const d = new Date();
-          let themonth = d.getMonth()+1
-          const datestring = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + '|' + d.getDate() + '/' + themonth + '/' + d.getFullYear();
-          messagesRef.push({
-            date: datestring,
-            name: sessionStorage.getItem('currentAccount'),
-            text: message
-          });
-          messageInput.value = '';
-        }
-      });
-    </script>
+      Odhran
+      The Boys Website V2 CEO
+    </p>
   </body>
 </html>
