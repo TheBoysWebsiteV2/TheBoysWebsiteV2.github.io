@@ -4,42 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Chat | The Boys Website V2</title>
+
+    <link type="text/css" rel="stylesheet" href="/data/css/standard_stylesheet.css">
+    
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <style>
-      body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f5f5f5;
-        margin: 0;
-      }
-      header {
-        font-size: 30px;
-        background-color: grey;
-        font-family: 'Arial', sans-serif;
-        color: white;
-        padding: 10px;
-        text-align: center;
-      }
-      nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        margin: 0 10px;
-      }
-      nav ul li.selected {
-        text-decoration: underline;
-      }
-      nav ul li a {
-        color: white;
-        text-decoration: none;
-      }
-      nav ul li a:hover {
-        text-decoration: underline;
-      }
+      /* 2. REMOVE these duplicated styles. They are now loaded from standard_stylesheet.css */
+      /* body { ... }
+      header { ... }
+      nav ul { ... }
+      nav ul li { ... }
+      nav ul li.selected { ... }
+      nav ul li a { ... }
+      nav ul li a:hover { ... } 
+      */
+
+      /* Keep only the styles that are UNIQUE to this page */
       #chat-container {
         width: 100%;
         max-width: 600px;
@@ -111,24 +92,27 @@
         </ul>
       </nav>
     </header>
-    <h1>Text Chat shut down.</h1>
-    <p>
-      Hello all,<br>
-      <br>
-      I have shut down the text chat as it takes a lot of work to maintain, and not enough people use it to justify keeping it.<br>
-      Sadly, this may start happening to the whole website, as no one is logging on enough to justify the work it requires.<br>
-      It takes time & effort to run a website, and I do not want to do this if no one uses the website.<br>
-      I know this may be annoying, especially as I get the sense that this is the part of the website that people find most useful.<br>
-      Sadly however, it also probably takes the most time & effort to maintain.<br>
-      You may be wondering, why not just leave the text chat, instead of shutting it down.<br>
-      The thing is, I need to continue updating it to keep the messages secure, and leaving it sitting here, without updates, would result in multiple things, including the text chat messages being less secure, errors sending messages, incorrect time stamps, and ultimitely, the whole text chat eventually breking.<br>
-      The text chat may come back in future, I do not know.<br>
-      But for now, I'm afraid, it isn't avalible.<br>
-      <br>
-      Sincerely,<br>
-      <br>
-      Odhran Vermunt<br>
-      The Boys Website V2 CEO<br>
-    </p>
+
+    <article>
+      <h1>Text Chat shut down.</h1>
+      <p>
+        Hello all,<br>
+        <br>
+        I have shut down the text chat as it takes a lot of work to maintain, and not enough people use it to justify keeping it.<br>
+        Sadly, this may start happening to the whole website, as no one is logging on enough to justify the work it requires.<br>
+        It takes time & effort to run a website, and I do not want to do this if no one uses the website.<br>
+        I know this may be annoying, especially as I get the sense that this is the part of the website that people find most useful.<br>
+        Sadly however, it also probably takes the most time & effort to maintain.<br>
+        You may be wondering, why not just leave the text chat, instead of shutting it down.<br>
+        The thing is, I need to continue updating it to keep the messages secure, and leaving it sitting here, without updates, would result in multiple things, including the text chat messages being less secure, errors sending messages, incorrect time stamps, and ultimitely, the whole text chat eventually breking.<br>
+        The text chat may come back in future, I do not know.<br>
+        But for now, I'm afraid, it isn't avalible.<br>
+        <br>
+        Sincerely,<br>
+        <br>
+        Odhran Vermunt<br>
+        The Boys Website V2 CEO<br>
+      </p>
+    </article>
   </body>
 </html>
