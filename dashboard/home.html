@@ -7,18 +7,6 @@
     <link type="text/css" rel="stylesheet" href="/data/css/standard_stylesheet.css">
     <script src="/data/scripts/adminData.js"></script>
     <script src="/data/scripts/admin_proper_login_check.js"></script>
-    <script defer>
-      // Wait for the page content to load before running the script
-      window.addEventListener('DOMContentLoaded', (event) => {
-        // Corrected function name from getElementByID to getElementById
-        let daysElement = document.getElementById('holsdays');
-        const d = new Date();
-        // Make sure the element was found before trying to change it
-        if (daysElement) {
-          daysElement.innerHTML = 27 - d.getDate();
-        }
-      });
-    </script>
   </head>
   <body>
     <header>
@@ -38,7 +26,7 @@
       <center><p><img src="/data/images/logo.png" border="2px" alt="Boys logo"></p></center>
       <h1>Welcome to The Boys Website V2!</h1>
       <h2>Info</h2>
-      <p><strong id ="holsdays">#</strong> days until the summer holidays end 🙁</p>
+      <p>No info right now!</p>
       <h2>Updates</h2>
       <p>For update info, please click <a href="notes#weeklydevnotes">here</a>.</p>
     </article>
