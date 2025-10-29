@@ -16,9 +16,9 @@ article a:hover {
 
 header {
   font-size: 30px;
-  background-color: grey;
+  /*background-color: grey;*/
   font-family: 'Arial', sans-serif;
-  color: white;
+  color: black;
   padding: 10px;
   text-align: center;
 }
