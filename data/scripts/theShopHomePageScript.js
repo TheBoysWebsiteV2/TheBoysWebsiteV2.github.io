@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (productsContainer) { // Check if productsContainer is not undefined
         const productContainers = productsContainer.getElementsByClassName("productcontainer");
         const productsContainerLen = productContainers.length;
-
+        console.log(productsContainerLen)
         for (let x = 0; x < productsContainerLen; x++) {
             const z = productContainers[x].id;
             console.log(z)
