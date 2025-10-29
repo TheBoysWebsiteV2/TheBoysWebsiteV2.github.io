@@ -27,6 +27,48 @@
   <body>
     <div class="container">
       <img src='/data/images/padlock.png' alt="Padlock">
+      <h1>This website has been shut down.</h1>
+      <p>This is because not enough people use it to justify maintaining it.</p>
+      <button onclick="changeurl()">Back</button>
+    </div>
+  </body>
+</html>
+<script>
+  function changeurl() {
+    window.location.href='/login?source=lockedaccount'
+  }
+</script>
+
+
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <title>Locked Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        text-align: center;
+        padding: 20px;
+      }
+      img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src='/data/images/padlock.png' alt="Padlock">
       <h1>This account is locked.</h1>
       <p>This account has been locked.</p>
       <p>You can't access this account at the moment.</p>
@@ -39,3 +81,4 @@
     window.location.href='/login?source=lockedaccount'
   }
 </script>
+-->
