@@ -25,24 +25,28 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let x = 0; x < productsContainerLen; x++) {
             let z = productContainers[x].id;
             console.log(z)
-            
-            productContainers[x].getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1.png';
-            productContainers[x].getElementById('productTitle_' + z).innerHTML = theShopItemNames[z];
+            let img = document.createElement('img')
+            img.src = '/data/images/the_shop_' + z + '_product-image_1.png';
+            let title = document.createElement('p')
+            title.style = 'font-weight: bold;'
+            title.innerHTML = theShopItemNames[z];
             console.log(theShopItemNames[z])
-            productContainers[x].getElementById('productPrice_' + z).innerHTML = '£' + theShopItemPrices[z];
+            let price = document.createElement('p')
+            price.style = 'margin: 0 auto;'
+            price.innerHTML = '£' + theShopItemPrices[z];
             console.log(theShopItemPrices[z])
 
             // Add hover effect
             productContainers[x].addEventListener('mouseover', function() {
                 this.style.backgroundColor = '#f0f0f0'; // Change background color on hover
-                this.style.cursor = 'pointer'; // Change cursor to pointer on hover
-                productContainers[x].getElementById('productImage_' + z).src = '/data/images/the-shop-loading-icon.gif';
-                productContainers[x].getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_2.png';
+                //this.style.cursor = 'pointer'; // Change cursor to pointer on hover
+                img.src = '/data/images/the-shop-loading-icon.gif';
+                img.src = '/data/images/the_shop_' + z + '_product-image_2.png';
             });
 
             productContainers[x].addEventListener('mouseout', function() {
                 this.style.backgroundColor = ''; // Reset background color when not hovering
-                productContainers[x].getElementById('productImage_' + z).src = '/data/images/the_shop_' + z + '_product-image_1.png';
+                img.src = '/data/images/the_shop_' + z + '_product-image_1.png';
             });
             productContainers[x].addEventListener('click', () => {
               window.location.href = '/dashboard/the-shop/product?code=' + z;
