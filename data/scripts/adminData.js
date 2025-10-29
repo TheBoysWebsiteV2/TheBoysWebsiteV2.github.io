@@ -29,8 +29,8 @@ const unametoid = {
 };
 const lockedAccounts = {
     'VBurden': 'TRUE',
-    'TGreen': 'FALSE',
+    'TGreen': 'TRUE',
     'DKennedy': 'TRUE',
     'OVermunt': 'FALSE',
-    'LKane': 'FALSE'
+    'LKane': 'TRUE'
 };
