@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Add hover effect
             productContainers[x].addEventListener('mouseover', function() {
-                this.style.backgroundColor = '#f0f0f0'; // Change background color on hover
+                this.style.backgroundColor = '#f0f0f0 !important'; // Change background color on hover
                 img.src = '/data/images/the-shop-loading-icon.gif';
                 img.src = '/data/images/the_shop_' + z + '_product-image_2.png';
             });
