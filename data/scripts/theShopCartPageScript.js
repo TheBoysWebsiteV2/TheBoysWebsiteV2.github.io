@@ -31,11 +31,15 @@ function removeItem(num) {
 }
 
 function goToCheckout() {
-  let orderWindow = window.open(
-    "order",
-    "Order | The Shop | The Boys Website V2",
-    "width=500,height=500,left=200,top=150,toolbar=no,menubar=no,resizable=no,scrollbars=no"
-  );
+  if (sessionStorage.getItem('theShopCart') == '') {
+    alert('Your cart is empty.')
+  } else{
+    let orderWindow = window.open(
+      "order",
+      "Order | The Shop | The Boys Website V2",
+      "width=500,height=500,left=200,top=150,toolbar=no,menubar=no,resizable=no,scrollbars=no"
+    );
+  }
 }
 if ((cart == null) || (cart == '')){
   //cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
