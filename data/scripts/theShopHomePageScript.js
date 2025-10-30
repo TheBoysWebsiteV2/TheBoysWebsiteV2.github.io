@@ -94,13 +94,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Add hover effect
             productContainers[x].addEventListener('mouseover', function() {
-                this.style = 'background-color: #f0f0f0; !important'; // Change background color on hover
+                this.style.transform = 'scale(1.1)';
+                this.style.background_color = '#f0f0f0'; // Change background color on hover
                 img.src = '/data/images/the-shop-loading-icon.gif';
                 img.src = '/data/images/the_shop_' + z + '_product-image_2.png';
             });
 
             productContainers[x].addEventListener('mouseout', function() {
-                this.style = 'background-color: #E0E0E0; !important'; // Reset background color when not hovering
+                this.style.transform = `scale(1)`;
+                this.style.background_color = '#E0E0E0'; // Reset background color when not hovering
                 img.src = '/data/images/the_shop_' + z + '_product-image_1.png';
             });
             productContainers[x].addEventListener('click', () => {
