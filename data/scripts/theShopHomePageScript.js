@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(z)
 
             // Create elements
+            let center = document.createElement('center')
+            
             let img = document.createElement('img')
             img.src = '/data/images/the_shop_' + z + '_product-image_1.png';
 
@@ -83,9 +85,10 @@ document.addEventListener('DOMContentLoaded', function() {
             let price = document.createElement('p')
             price.style.margin = '0 auto';
             price.innerHTML = '£' + theShopItemPrices[z];
-
+            
             // Append elements to the container
-            productContainers[x].appendChild(img);
+            center.appendChild(img)
+            productContainers[x].appendChild(center);
             productContainers[x].appendChild(title);
             productContainers[x].appendChild(price);
 
