@@ -27,13 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(z)
             let img = document.createElement('img')
             img.src = '/data/images/the_shop_' + z + '_product-image_1.png';
+            img.parent = productContainers[x]
             let title = document.createElement('p')
             title.style = 'font-weight: bold;'
             title.innerHTML = theShopItemNames[z];
+            title.parent = productContainers[x]
             console.log(theShopItemNames[z])
             let price = document.createElement('p')
             price.style = 'margin: 0 auto;'
             price.innerHTML = '£' + theShopItemPrices[z];
+            price.parent = productContainers[x]
             console.log(theShopItemPrices[z])
 
             // Add hover effect
