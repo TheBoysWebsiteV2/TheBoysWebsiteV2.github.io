@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search); const bgh = urlParams.get('code');
 document.addEventListener('DOMContentLoaded', function() { 
   if (theShopItemNames[bgh]) {
-    continue
+    console.log(bgh + ' is a valid product.');
   } else {
     window.location.replace('/dashboard/the-shop');
   };
