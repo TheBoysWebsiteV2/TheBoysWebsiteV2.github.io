@@ -22,6 +22,10 @@
         border: none;
       }
       div.productscontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;     /* allows wrapping to the next row */
+        gap: 16px;
         width: auto;
         height: auto;
       }
@@ -73,9 +77,12 @@
       </div>
       <div class="productscontainer">
         <h1>Popular</h1>
+        <br>
         <div class="productcontainer" id="562394"></div>
         <div class="productcontainer" id="562394"></div>
+        <br>
         <h1>Great Deals!</h1>
+        <br>
         <div class="productcontainer" id="562394"></div>
     </article>
   </body>
