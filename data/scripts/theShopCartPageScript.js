@@ -45,7 +45,7 @@ function goToCheckout() {
 }
 if ((cart == null) || (cart == '')){
   cartTable.remove();
-  cartIsEmptyText.innerHTML = '<h3>Your cart is empty.</h3>';
+  cartIsEmptyText.innerHTML = 'Your cart is empty.';
 } else {
   const splitCart = cart.split(' ');
   console.log(splitCart);
