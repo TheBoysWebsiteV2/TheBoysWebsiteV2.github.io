@@ -19,6 +19,8 @@
 // Ensure `theShopItemNames` and `theShopItemPrices` are defined or imported
 const cart = sessionStorage.getItem('theShopCart'); 
 let cartItemsDiv = document.getElementById('cartItemsDiv');
+const cartIsEmptyText = document.getElementById('cart-empty-text');
+const cartTable = document.getElementById('cart');
 function removeItem(num) {
   //TO BE CONTINUED
   let cartArray = cart.split(' '); // Split the cart into an array of items
@@ -42,6 +44,7 @@ function goToCheckout() {
   }
 }
 if ((cart == null) || (cart == '')){
+  cartTable.remove();
   cartItemsDiv.innerHTML = '<h3>Your cart is empty.</h3>';
 } else {
   const splitCart = cart.split(' ');
