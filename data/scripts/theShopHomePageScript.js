@@ -64,7 +64,7 @@ let loadsecond = false;
 document.addEventListener('DOMContentLoaded', function() {
     const productsContainers = document.getElementsByClassName("productscontainer");
     const productsContainersNo = productsContainers.length
-    if (productsContainer) { // Check if productsContainer is not undefined
+    if (productsContainers) { // Check if productsContainer is not undefined
         for (const productsContainer of productsContainers) {
             const productContainers = productsContainer.getElementsByClassName("productcontainer");
             const productsContainerLen = productContainers.length;
