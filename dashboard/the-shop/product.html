@@ -68,23 +68,25 @@
   </head>
   <body>
     <article>
-      <div class="logoheading">
-        <p><img src="/data/images/the-shop-logo.png"></p>
-        <br>
-        <center>
-          <p><a href="/dashboard/the-shop" class="hl1">Home</a> | <a href="/dashboard/the-shop/cart" class="hl1">Cart</a></p>
-        </center>
-        <hr>
-      </div>
-      <p><image src="/data/images/the-shop-loading-icon.gif" style="float: left;" id="productImage"></p>
-      <h1 id="productTitle">Loading...</h1>
-      <p></p>
-      <h3 id="productPrice">£0.00</h3>
-      <center>
+      <div class="productcontainer">
+        <div class="logoheading">
+          <p><img src="/data/images/the-shop-logo.png"></p>
+          <br>
+          <center>
+            <p><a href="/dashboard/the-shop" class="hl1">Home</a> | <a href="/dashboard/the-shop/cart" class="hl1">Cart</a></p>
+          </center>
+          <hr>
+        </div>
+        <p><image src="/data/images/the-shop-loading-icon.gif" style="float: left;" id="productImage"></p>
+        <h1 id="productTitle">Loading...</h1>
         <p></p>
-        <button id="addToCartButton" class="purchaseButton" onclick="addToCart()">Add To Cart</button>
-      </center>
-      <div id="description"></div>
+        <h3 id="productPrice">£0.00</h3>
+        <center>
+          <p></p>
+          <button id="addToCartButton" class="purchaseButton" onclick="addToCart()">Add To Cart</button>
+        </center>
+        <div id="description"></div>
+      </div>
     </article>
   </body>
 </html>
