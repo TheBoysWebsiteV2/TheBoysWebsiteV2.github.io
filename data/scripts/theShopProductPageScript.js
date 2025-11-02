@@ -2,13 +2,13 @@ const urlParams = new URLSearchParams(window.location.search); const bgh = urlPa
 document.addEventListener('DOMContentLoaded', function() { 
   if (theShopItemNames[bgh]) {
     console.log(bgh + ' is a valid product.');
-    //const data = itemData[bgh]
+    const data = itemData[bgh]
   } else {
     window.location.replace('/dashboard/the-shop');
   };
   document.getElementById('productImage').src = '/data/images/the_shop_' + bgh + '_product-image_1.png';
-  document.getElementById('productTitle').innerHTML = theShopItemNames[bgh];
-  document.getElementById('productPrice').innerHTML = '£' + theShopItemPrices[bgh];
+  document.getElementById('productTitle').innerHTML = itemData[bgh][0];
+  document.getElementById('productPrice').innerHTML = '£' + itemData[bgh][1];
   document.getElementById('description').innerHTML = theShopItemDescriptions[bgh];
 });
 function addToCart() {
