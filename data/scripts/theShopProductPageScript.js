@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('productImage').src = '/data/images/the_shop_' + bgh + '_product-image_1.png';
   document.getElementById('productTitle').innerHTML = itemData[bgh][0];
   document.getElementById('productPrice').innerHTML = '£' + itemData[bgh][1];
-  document.getElementById('description').innerHTML = theShopItemDescriptions[bgh];
+  document.getElementById('description').innerHTML = itemData[bgh][3];
 });
 function addToCart() {
   if ((sessionStorage.getItem('theShopCart') == null) || (sessionStorage.getItem('theShopCart') == '')) {
