@@ -8,6 +8,6 @@ const theShopItemPricesAsNum = {
     562394: 0.20
 }
 
-const theShopItemData = {        
+const itemData = {        
     562394: ['Clicker Fidget', 0.20, 2]
 }
