@@ -12,5 +12,5 @@ const theShopItemDescriptions = {
 }
 
 const itemData = {        
-    562394: ['Clicker Fidget', '0.20', 2]
+    562394: ['Clicker Fidget', '0.20', 2, `<p>Squeze this fun Clicker Fidget to make a satisfying <strong style="color: red;"><i>CLICK!</i></strong></p>`]
 }
