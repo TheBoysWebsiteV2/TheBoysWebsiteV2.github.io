@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search); const bgh = urlPa
 document.addEventListener('DOMContentLoaded', function() { 
   if (theShopItemNames[bgh]) {
     console.log(bgh + ' is a valid product.');
-    data = itemData[bgh]
+    const data = itemData[bgh]
   } else {
     window.location.replace('/dashboard/the-shop');
   };
