@@ -20,3 +20,9 @@ function addToCart() {
     alert('Item succesfully added to cart!');
   }
 }
+document.getElementById('decreaseQuantity').addEventListner('click', function () {
+  alert('DECREASE');
+}
+document.getElementById('increaseQuantity').addEventListner('click', function () {
+  alert('INCREASE');
+}
