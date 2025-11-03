@@ -21,6 +21,7 @@ const cart = sessionStorage.getItem('theShopCart');
 let cartItemsDiv = document.getElementById('cartItemsDiv');
 const cartIsEmptyText = document.getElementById('cart-empty-text');
 const cartTable = document.getElementById('cart');
+const cartTableContentsList = []
 function removeItem(num) {
   //TO BE CONTINUED
   let cartArray = cart.split(' '); // Split the cart into an array of items
@@ -59,8 +60,10 @@ if ((cart == null) || (cart == '')){
       totalSoFar = parseFloat((totalSoFar + theShopItemPricesAsNum[currentItemCode]).toFixed(2));
       const itemElement = document.createElement('tr');
       //itemElement.setAttribute('class', 'productcontainer');
+      const price = itemData[currentItemCode][2]
       itemElement.innerHTML = `
         <td>${theShopItemNames[currentItemCode]}</td>
+        <td>1</td>
         <td>£${theShopItemPrices[currentItemCode]}</td>
         <td><button class="removeButton" onclick="removeItem(` + x + `)">Remove</button></td>`;
       cartItemsDiv.appendChild(itemElement);
