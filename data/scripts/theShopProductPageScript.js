@@ -22,7 +22,7 @@ function addToCart() {
 }
 document.getElementById('decreaseQuantity').addEventListner('click', function () {
   alert('DECREASE');
-}
+});
 document.getElementById('increaseQuantity').addEventListner('click', function () {
   alert('INCREASE');
-}
+});
