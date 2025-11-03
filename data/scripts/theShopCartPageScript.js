@@ -56,15 +56,15 @@ if ((cart == null) || (cart == '')){
     console.log(currentItemCode);
     
     // Check if `currentItemCode` is valid and exists in `theShopItemNames`
-    if (theShopItemNames[currentItemCode]) {
+    if (itemData[currentItemCode]) {
       totalSoFar = parseFloat((totalSoFar + theShopItemPricesAsNum[currentItemCode]).toFixed(2));
       const itemElement = document.createElement('tr');
       //itemElement.setAttribute('class', 'productcontainer');
-      const price = itemData[currentItemCode][2]
+      const price = itemData[currentItemCode][1].toString();
       itemElement.innerHTML = `
-        <td>${theShopItemNames[currentItemCode]}</td>
+        <td>${itemData[currentItemCode][0]}</td>
         <td>1</td>
-        <td>£${theShopItemPrices[currentItemCode]}</td>
+        <td>£${price}</td>
         <td><button class="removeButton" onclick="removeItem(` + x + `)">Remove</button></td>`;
       cartItemsDiv.appendChild(itemElement);
     } else {
